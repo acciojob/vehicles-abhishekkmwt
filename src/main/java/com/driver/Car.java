@@ -4,14 +4,16 @@ public class Car extends Vehicle {
     private int wheels;
     private String type;
     private int doors;
+
+    public void setWheels(int wheels) {
+        this.wheels = wheels;
+    }
+
     private int gears;
     private boolean isManual;
 
     private int currentGear;
     private int seats;
-
-
-
     public Car(String name, int wheels, int doors, int gears, boolean isManual, String type, int seats) {
         super(name);
         //Hint: Car extends Vehicle
